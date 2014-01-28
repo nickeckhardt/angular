@@ -1,8 +1,61 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{435B3AF3-7EB7-443D-8DAA-103C97F5AED0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "site", "site", "{DE44FF41-1473-4885-82F4-2DD928251469}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\app\site\controllers.js = ..\..\app\site\controllers.js
+		..\..\app\site\services.js = ..\..\app\site\services.js
+		..\..\app\site\site.js = ..\..\app\site\site.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "home", "home", "{CBCBBDB9-38DC-415C-9C18-B39A1CFAA7B8}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\app\site\home\index.html = ..\..\app\site\home\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "about", "about", "{546A6BDB-E56A-4A25-BB0F-F293F6270763}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\app\site\about\index.html = ..\..\app\site\about\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{40520447-AF5B-4595-B273-9A7335429618}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Apache\conf\extra\httpd-vhosts.conf = ..\..\..\..\..\Apache\conf\extra\httpd-vhosts.conf
+		..\..\..\..\..\Apache\conf\httpd.conf = ..\..\..\..\..\Apache\conf\httpd.conf
+		web.config = web.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "angular", "angular", "{7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\index.html = ..\..\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{8999F64D-D8E1-4FAB-A576-57A452E27134}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngularJs.Mvc", "AngularJs.Mvc\AngularJs.Mvc.csproj", "{14B09A35-B647-4CBE-AF4E-849509DFC96C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14B09A35-B647-4CBE-AF4E-849509DFC96C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B09A35-B647-4CBE-AF4E-849509DFC96C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B09A35-B647-4CBE-AF4E-849509DFC96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B09A35-B647-4CBE-AF4E-849509DFC96C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DE44FF41-1473-4885-82F4-2DD928251469} = {435B3AF3-7EB7-443D-8DAA-103C97F5AED0}
+		{CBCBBDB9-38DC-415C-9C18-B39A1CFAA7B8} = {DE44FF41-1473-4885-82F4-2DD928251469}
+		{546A6BDB-E56A-4A25-BB0F-F293F6270763} = {DE44FF41-1473-4885-82F4-2DD928251469}
+		{435B3AF3-7EB7-443D-8DAA-103C97F5AED0} = {7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}
+		{40520447-AF5B-4595-B273-9A7335429618} = {7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}
+		{14B09A35-B647-4CBE-AF4E-849509DFC96C} = {8999F64D-D8E1-4FAB-A576-57A452E27134}
 	EndGlobalSection
 EndGlobal
