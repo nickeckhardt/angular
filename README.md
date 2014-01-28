@@ -1,4 +1,4 @@
 angular
 =======
 
-angular prototype
+angular prototype using routes and services
