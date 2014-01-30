@@ -8,6 +8,15 @@ site.config(['$routeProvider', function($routeProvider){
 		  .when('/About', {
 			templateUrl: '/app/site/about/index.html',
 		  })
+		  .when('/Products', {
+			templateUrl: '/app/site/products/index.html',
+		  })
+		  .when('/Services', {
+			templateUrl: '/app/site/services/index.html',
+		  })
+		  .when('/Contact', {
+			templateUrl: '/app/site/contact/index.html',
+		  })
 		  .otherwise({
 			redirectTo: '/'
 		  });

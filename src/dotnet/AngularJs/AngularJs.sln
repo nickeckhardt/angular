@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "angular", "angular", "{7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\index.html = ..\..\index.html
+	EndProjectSection
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{435B3AF3-7EB7-443D-8DAA-103C97F5AED0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "site", "site", "{DE44FF41-1473-4885-82F4-2DD928251469}"
@@ -20,6 +25,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "about", "about", "{546A6BDB
 		..\..\app\site\about\index.html = ..\..\app\site\about\index.html
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "contact", "contact", "{2D0796A8-94B5-4092-9C0C-5B152D3B0AE1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\app\site\contact\index.html = ..\..\app\site\contact\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "services", "services", "{5B588BFA-8A43-435C-A5F7-D903716FCA7A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\app\site\services\index.html = ..\..\app\site\services\index.html
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "products", "products", "{56CB0FE3-DA76-4AA7-8A5C-96F5B85731AF}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\app\site\products\index.html = ..\..\app\site\products\index.html
+	EndProjectSection
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{40520447-AF5B-4595-B273-9A7335429618}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\..\Apache\conf\extra\httpd-vhosts.conf = ..\..\..\..\..\Apache\conf\extra\httpd-vhosts.conf
@@ -27,9 +47,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "config", "config", "{405204
 		web.config = web.config
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "angular", "angular", "{7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{9A48CAE0-F776-425C-878D-3317A79E78DA}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\index.html = ..\..\index.html
+		..\..\css\buttons.css = ..\..\css\buttons.css
+		..\..\css\forms.css = ..\..\css\forms.css
+		..\..\css\scaffolding.css = ..\..\css\scaffolding.css
+		..\..\css\tables.css = ..\..\css\tables.css
+		..\..\css\tabs.css = ..\..\css\tabs.css
+		..\..\css\workless.css = ..\..\css\workless.css
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dotnet", "dotnet", "{8999F64D-D8E1-4FAB-A576-57A452E27134}"
@@ -47,15 +72,22 @@ Global
 		{14B09A35-B647-4CBE-AF4E-849509DFC96C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B09A35-B647-4CBE-AF4E-849509DFC96C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{435B3AF3-7EB7-443D-8DAA-103C97F5AED0} = {7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}
+		{40520447-AF5B-4595-B273-9A7335429618} = {7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}
+		{9A48CAE0-F776-425C-878D-3317A79E78DA} = {7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}
 		{DE44FF41-1473-4885-82F4-2DD928251469} = {435B3AF3-7EB7-443D-8DAA-103C97F5AED0}
 		{CBCBBDB9-38DC-415C-9C18-B39A1CFAA7B8} = {DE44FF41-1473-4885-82F4-2DD928251469}
 		{546A6BDB-E56A-4A25-BB0F-F293F6270763} = {DE44FF41-1473-4885-82F4-2DD928251469}
-		{435B3AF3-7EB7-443D-8DAA-103C97F5AED0} = {7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}
-		{40520447-AF5B-4595-B273-9A7335429618} = {7B6460B1-FF18-42BB-8E53-88F74BD4A7F1}
+		{2D0796A8-94B5-4092-9C0C-5B152D3B0AE1} = {DE44FF41-1473-4885-82F4-2DD928251469}
+		{5B588BFA-8A43-435C-A5F7-D903716FCA7A} = {DE44FF41-1473-4885-82F4-2DD928251469}
+		{56CB0FE3-DA76-4AA7-8A5C-96F5B85731AF} = {DE44FF41-1473-4885-82F4-2DD928251469}
 		{14B09A35-B647-4CBE-AF4E-849509DFC96C} = {8999F64D-D8E1-4FAB-A576-57A452E27134}
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = AngularJs.Mvc\AngularJs.Mvc.csproj
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal

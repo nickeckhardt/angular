@@ -7,22 +7,31 @@
 	<script src="app/site/site.js"></script>
 	<script src="app/site/services.js"></script>
 	<script src="app/site/controllers.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/workless.css" />
+	<link rel="stylesheet" type="text/css" href="css/scaffolding.css" />
 </head>
 <body ng-app="site">
-	<header>
-    <div class="wrap">
-        <!-- logo -->
-<!--	        <a href="#!"><img class="logo" src="images/logo.png" /></a>-->
+	<div class="wrap" style="border: solid 10px white">
+		<header style="border: solid 4px white">
+	    
+	        <!-- logo -->
+	<!--	        <a href="#!"><img class="logo" src="images/logo.png" /></a>-->
 
-	        <!-- navigation menu -->
-	        <nav>
-	            <ul>
-					<li><a id="home" href="/">Home</a></li>
-					<li><a id="about" href="/About">About</a></li>
-	            </ul>
-	        </nav>
-	    </div>
-	</header>
-	<div ng-view></div>
+		        <!-- navigation menu -->
+		        <nav>
+		        	<div class="one_fifth"><a href="/">Home</a></div>
+		        	<div class="one_fifth"><a href="/About">About</a></div>
+		        	<div class="one_fifth"><a href="/Products">Products</a></div>
+		        	<div class="one_fifth"><a href="/Services">Services</a></div>
+		        	<div class="one_fifth"><a href="/Contact">Contact</a></div>
+		        </nav>
+		    
+		</header>
+		<div ng-view></div>
+		<footer>
+			<div class="two_third">&copy; copyright 2014, organic software solutions, llc</div>
+	    	<div class="one_third"><a href="/Sitemap">sitemap</a></div>
+		</footer>
+	</div>
 </body>
 </html>
