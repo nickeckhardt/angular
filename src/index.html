@@ -3,8 +3,10 @@
 <head>
 	<script src="plugins/jquery-1.11.0.min.js"></script>
 	<script src="angularjs/angular.min.js"></script>
-	<script src="plugins/angular-route.min.js"></script>
+	<!--<script src="plugins/angular-route.min.js"></script>-->
+    <script src="plugins/angular-ui-router.js"></script>
 	<script src="app/site/site.js"></script>
+    <script src="app/site/siteStates.js"></script>
 	<script src="app/site/services.js"></script>
 	<script src="app/site/controllers.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/workless.css" />
@@ -27,7 +29,7 @@
 		        </nav>
 		    
 		</header>
-		<div ng-view></div>
+		<div ui-view class="container"></div>
 		<footer>
 			<div class="two_third">&copy; copyright 2014, organic software solutions, llc</div>
 	    	<div class="one_third"><a href="/Sitemap">sitemap</a></div>
